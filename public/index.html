@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snip — URL Shortener</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-blob blob1"></div>
+<div class="bg-blob blob2"></div>
+
+<main class="container">
+  <header class="hero">
+    <h1>✂️ Snip</h1>
+    <p>Paste a long link. Get a short one. That's it.</p>
+  </header>
+
+  <section class="card">
+    <form id="shortenForm">
+      <input
+        type="text"
+        id="urlInput"
+        placeholder="https://your-really-long-link.com/goes/here"
+        required
+      />
+      <button type="submit" id="submitBtn">Shorten</button>
+    </form>
+
+    <div id="resultBox" class="result-box hidden">
+      <span id="shortUrlText"></span>
+      <button id="copyBtn">Copy</button>
+    </div>
+
+    <p id="errorText" class="error hidden"></p>
+  </section>
+
+  <section class="card stats-card">
+    <h2>Check link stats</h2>
+    <form id="statsForm">
+      <input
+        type="text"
+        id="statsInput"
+        placeholder="Short code (e.g. aB3xY9) or full short URL"
+        required
+      />
+      <button type="submit">View Stats</button>
+    </form>
+
+    <div id="statsResult" class="stats-result hidden"></div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
