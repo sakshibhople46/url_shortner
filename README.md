@@ -2,7 +2,7 @@
 
 A full-stack URL shortener built from scratch to learn system design concepts hands-on: caching, database indexing, write buffering, rate limiting, and horizontal scalability patterns.
 
-**Live demo:** _add your deployed link here after Step 12_
+**Live demo:** [_add your deployed link here after Step 12_](https://snip-url-shortener-fk0d.onrender.com)
 
 ---
 
